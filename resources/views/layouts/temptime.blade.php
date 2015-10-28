@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>@yield('title')</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/theme.css" rel="stylesheet">
 	<link rel="stylesheet" href="/css/flexslider.css" type="text/css">
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
@@ -108,6 +109,7 @@
 	<br>
 	<br>
 	<br>
+
 
 
 
