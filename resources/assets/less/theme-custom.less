@@ -3,14 +3,36 @@
 html, body {
 	font-family: Raleway;
 	font-size: 16px;
+	margin-top:0px;
 }
+
+h1,h2,h3,h4 {
+	margin:0;
+	padding:0;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 60px;
+    height: 60px;
+    padding-top: 0;
+}
+
+.navbar-brand {
+	font-size:20px;
+}
+
+.monroe-text {
+	font-weight:bold;
+}
+
 
 .main-color {
 	color: @main-color;
 }
 
 .container {
-	max-width: 940px;
+	max-width: 1020px;
 }
 
 .header-band {
@@ -22,11 +44,13 @@ html, body {
 
 .nav-menu {
 	/*background-image: url('../images/gray-background.jpg');*/
-	border-top: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;
+	background-image: url('../images/gray-background.jpg');
+	background-repeat:repeat;
+	/*border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;*/
 	padding: 20px 0px;
 	margin-bottom:20px;
-	margin-top:20px;
+	margin-top:0px;
 }
 
 .fa-chevron-right {
@@ -45,3 +69,134 @@ html, body {
 	border-bottom: 1px solid @main-color;
 
 }
+
+.footer {
+	margin-bottom:20px;
+	padding: 40px 0px;
+	background-image: url('../images/gray-background.jpg');
+	background-repeat: repeat;
+	font-size:14px;
+}
+
+.footer a {
+	color: #666;
+}
+
+.footer h4 {
+	font-size:small;
+	text-transform:uppercase;
+	font-weight:bold;
+	border-bottom:1px solid #ccc;
+	margin: 24px 0px 12px;
+}
+
+.copyright-footer {
+	text-align: center;
+	padding: 20px 0px;
+}
+
+		/*Caption Text*/
+		.flex-caption {
+		    top:30%;
+		    right:10%;
+		    width:40%;
+		    color: white;
+		    /* font-size: 16px; */
+		    font-size:12px;
+		    line-height: 20px;
+		    
+		    padding:0 20px;
+		    position:absolute;
+		  
+		    /*text-transform: uppercase;*/
+		    z-index:1;
+		    padding:20px;
+		    border:2px solid white;
+		    border-radius:4px;
+		    display:none;
+		    background: rgb(237, 198, 99); /* The Fallback */
+   			background: rgba(237, 198, 99, 0.85); 
+
+   			background: rgb(0, 0, 0); /* The Fallback */
+   			background: rgba(0, 0, 0, 0.50);
+		}
+
+		.flex-caption h4 {
+			margin-bottom:12px;
+		}
+
+		.top-bar {
+		
+			height:20px;
+		}
+
+	.footer .fa-ul {
+		margin-left: 1.3em;
+
+	}
+
+	.quote-icons {
+		color:#ccc;
+	}
+
+
+	
+	
+	
+	/* Custom, iPhone Retina */
+	@media only screen and (min-width : 320px){
+ 
+	}
+ 
+	/* Extra Small Devices, Phones */
+	@media only screen and (min-width : 480px){
+
+
+ 		
+	}
+ 
+	/* Small Devices, Tablets */
+	@media only screen and (min-width : 768px){
+ 		.flex-caption {
+ 			display:block;
+ 		}
+ 		.footer h4 {
+			font-size:small;
+			text-transform:uppercase;
+			font-weight:bold;
+			border-bottom:1px solid #ccc;
+			margin: 12px 0px 12px;
+		}
+
+		.navbar-brand,
+		.navbar-nav li a {
+		    line-height: 100px;
+		    height: 100px;
+		    padding-top: 0;
+		}
+
+		.navbar-brand {
+			font-size: 38px;
+		}
+
+		.call-us-text {
+			text-align:right;
+			font-size:18px;
+		}
+
+		.monroe-text {
+			font-weight:normal;
+			font-size:18px;
+		}
+
+	}
+ 
+	/* Medium Devices, Desktops */
+	@media only screen and (min-width : 992px){
+ 
+	}
+ 
+	/* Large Devices, Wide Screens */
+	@media only screen and (min-width : 1200px){
+ 
+	}

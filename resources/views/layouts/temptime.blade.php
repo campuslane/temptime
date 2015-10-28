@@ -11,104 +11,89 @@
 	<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	@yield('styles')
 
-	<style>
-		/*Caption Text*/
-		.flex-caption {
-		    top:30%;
-		    right:10%;
-		    width:40%;
-		    color: white;
-		    font-size: 16px;
-		    line-height: 20px;
-		    
-		    padding:0 20px;
-		    position:absolute;
-		  
-		    text-transform: uppercase;
-		    z-index:1;
-		    padding:20px;
-		    border:2px solid white;
-		    border-radius:4px;
-		    display:block;
-		    background: rgb(237, 198, 99); /* The Fallback */
-   			background: rgba(237, 198, 99, 0.85); 
 
-   			background: rgb(0, 0, 0); /* The Fallback */
-   			background: rgba(0, 0, 0, 0.50);
-		}
-
-		.top-bar {
-		
-			height:20px;
-		}
-
-	</style>
 </head>
 <body>
-	<div class="top-bar main-color">
-		
-	</div>
+	
+	@include('partials.navbar')
 	
 	
 	<div class="container">
-		<div class="clearfix">
+		{{-- <div class="clearfix">
 			
 			<h1 style="font-family:Lora;" class="pull-left"><i class="fa fa-clock-o main-color" style="font-size:40px;"></i> TempTime</h1>
-			<div class="pull-right" style="padding-top:32px; font-size:20px; font-weight:300; color:#777; font-family:Lora">
+			<div class="pull-right" style="padding-top:12px; font-size:20px; font-weight:300; color:#777; font-family:Lora">
 				Monroe Personnel Service, LLC
 			</div>
-		</div>
+		</div> --}}
+
+		{{-- <div style="text-align:center">
+			<img src="/images/tt_banner2.jpg" alt="">
+		</div> --}}
 
 	</div>
 	<div class="nav-menu">
 		<div class="container">
-			<span class="pull-right" style="font-weight:bold;"><i class="fa fa-phone main-color"></i> (415) 555-1212</span>
-			<div style="font-size:14px;">
-			HOME &nbsp; &nbsp; ABOUT &nbsp; &nbsp; JOB SEEKERS &nbsp; &nbsp; EMPLOYERS &nbsp; &nbsp; ACCOLADES &nbsp; &nbsp; CONTACT US
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6 monroe-text">
+					Monroe Personnel Service, LLC
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 call-us-text">
+					Give us a Call <i class="fa fa-phone main-color"></i> (415) 732-7520
+				</div>
 			</div>
+			
+			
 		</div>
 	</div>
 	
 	<div class="container">
-			{{-- <div class="header-band">
-		<div class="container">
-			<div class="row">
-				
-
-				<div class="col-lg-6 col-md-6 col-sm-6" style="margin-top:-20px; margin-bottom:-20px;">
-					{{-- <img src="/images/sf1.jpg" class="img-responsive " alt="San Francisco Skyline"> --}}
-				{{-- </div>
-			</div>
-		</div>
-	</div>  --}}
-			<!-- Place somewhere in the <body> of your page -->
-			<div class="flexslider" style="margin-bottom:20px; background:#eee;">
-			  <ul class="slides">
-			    <li>
-			      <img src="/images/sf1.jpg" />
-			      <span class="flex-caption">The Right Staffing Solutions for your Business</span>
-			    </li>
-			    <li>
-			      <img src="/images/smiling.jpg" />
-			      <span class="flex-caption">Place Hold It Image</span>
-			    </li>
-			    <li>
-			      <img src="/images/woman-standing.jpg" />
-			      <span class="flex-caption">Place Hold It Image</span>
-			    </li>
-			  </ul>
-			</div>
-
-		</div>
-	
-
-	
-
+			
 	@yield('content')
 
+	</div>
+
 	<br>
 	<br>
 	<br>
+
+	<div class="footer">
+		<div class="container">
+			<div class="col-lg-4 col-md-4 col-sm-4">
+				<h4>Site</h4>
+				<ul class="fa-ul" >
+						<li><i class="fa-li fa fa-chevron-right"></i><a href="/">Home</a></li>
+						<li><i class="fa-li fa fa-chevron-right"></i><a href="/about">About</a></li>
+						<li><i class="fa-li fa fa-chevron-right"></i><a href="/job-seekers">Job Seekers</a></li>
+						<li><i class="fa-li fa fa-chevron-right"></i><a href="/employers">Employers</a></li>
+						<li><i class="fa-li fa fa-chevron-right"></i><a href="/contact">Contact</a></li>
+						
+					</ul>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4">
+
+				<h4>Resources</h4>
+				<ul class="fa-ul">
+						<li><i class="fa-li fa fa-chevron-right"></i><a href="/job-openings">Job Openings</a></li>
+						<li><i class="fa-li fa fa-chevron-right"></i><a href="/forms">Forms & Resources</a></li>
+				</ul>
+
+				<h4>Follow Us!</h4>
+				<ul class="fa-ul">
+						<li><i class="fa-li fa fa-chevron-right"></i><a href="/job-openings"><i class="fa fa-twitter"></i> Twitter</a></li>
+						<li><i class="fa-li fa fa-chevron-right"></i><a href="/forms"><i class="fa fa-facebook"></i> Facebook</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4">
+				<h4>Contact</h4>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, nesciunt. Repellat aut unde, labore vitae enim fugit? Nesciunt eum, minus similique illum ut, perspiciatis, aspernatur reiciendis libero magnam aliquid incidunt.
+			</div>
+		</div>
+	</div>
+
+	<div class="copyright-footer">
+		Copyright 2015 Monroe Personnel Service, LLC &nbsp; | &nbsp; <a href="/openings">Admin</a>
+	</div>
 
 
 
