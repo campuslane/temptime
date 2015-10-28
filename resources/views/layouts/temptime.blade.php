@@ -122,7 +122,8 @@
 	    $('.flexslider').flexslider({
 	    	controlNav: false, 
 	    	directionNav: false, 
-	    	animationSpeed: 2000
+	    	animationSpeed: 2000, 
+	    	touch: false
 	    });
 	  });
 	</script>

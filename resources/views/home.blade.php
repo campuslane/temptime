@@ -14,6 +14,7 @@
 		Whether your company is growing and you need the highest caliber employees, or you are a busy firm in need of temporary help in a crunch, give us a call! <br><br>
 
 		Our direct-hire consultants are continuously meeting with the absolute top candidates from San Francisco, Oakland, Emeryville, Berkeley and the greater Bay Area. Our temporary consultants have dozens of screened and qualified temps at the ready at all times. 
+		<br><br>
 			</div>
 
 			<div class="col-lg-4 col-md-4 col-sm-4">
